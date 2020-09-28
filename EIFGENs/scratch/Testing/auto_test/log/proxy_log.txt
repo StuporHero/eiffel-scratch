@@ -1,0 +1,4962 @@
+-- time stamp: start; 0; 2
+-- Proxy has started and connected to interpreter.
+-- Interpreter started after: 0
+:execute v_1 := Void
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_1
+	-- > ---multi-line-value-start---
+	-- > NONE
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 0; 210
+-- test case No.1
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_2.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 0; 242
+-- test case No.2
+:execute v_2.subscribe (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > s /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE_QUEUE       subscribe @1           s /= Void:                   
+	-- > <00000000045B0138>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 0; 274
+-- test case No.3
+:execute v_2.unsubscribe (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > s /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE_QUEUE       unsubscribe @1         s /= Void:                   
+	-- > <00000000045B0138>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 0; 309
+-- test case No.4
+:execute v_2.unsubscribe (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > s /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE_QUEUE       unsubscribe @1         s /= Void:                   
+	-- > <00000000045B0138>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 0; 342
+-- test case No.5
+:execute v_2.unsubscribe (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > s /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE_QUEUE       unsubscribe @1         s /= Void:                   
+	-- > <00000000045B0138>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 0; 375
+-- test case No.6
+:execute v_2.unsubscribe (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > s /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE_QUEUE       unsubscribe @1         s /= Void:                   
+	-- > <00000000045B0138>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 0; 408
+-- test case No.7
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_3.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 0; 447
+-- test case No.8
+:execute create {PRINT_SUBSCRIBER} v_4
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 0; 478
+-- test case No.9
+:execute v_3.unsubscribe (v_4)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 0; 512
+-- test case No.10
+:execute create {PRINT_SUBSCRIBER} v_5
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 0; 547
+-- test case No.11
+:execute v_3.unsubscribe (v_5)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 0; 580
+-- test case No.12
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_6.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 0; 624
+-- test case No.13
+:execute create {PRINT_SUBSCRIBER} v_7
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 0; 658
+-- test case No.14
+:execute v_6.subscribe (v_7)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 0; 697
+-- test case No.15
+:execute create {PRINT_SUBSCRIBER} v_8
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 0; 734
+-- test case No.16
+:execute create {MESSAGE [STRING_8]} v_9.make (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > initial /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE             make @1                initial /= Void:             
+	-- > <00000000045D2B48>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @3                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 0; 780
+-- test case No.17
+:execute v_7.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <00000000045CCDD8>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 0; 835
+-- test case No.18
+:execute v_3.publish (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE_QUEUE       publish @1             m /= Void:                   
+	-- > <00000000045C1388>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 0; 882
+-- test case No.19
+:execute v_2.publish (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE_QUEUE       publish @1             m /= Void:                   
+	-- > <00000000045B0138>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 0; 928
+-- test case No.20
+:execute create {PRINT_SUBSCRIBER} v_10
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 0; 965
+-- test case No.21
+:execute v_6.subscribe (v_10)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 1; 1001
+-- test case No.22
+:execute v_8.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <00000000045D0C28>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 1; 1049
+-- test case No.23
+:execute v_8.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <00000000045D0C28>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 1; 1095
+-- test case No.24
+:execute v_2.publish (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE_QUEUE       publish @1             m /= Void:                   
+	-- > <00000000045B0138>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 1; 1141
+-- test case No.25
+:execute v_6.unsubscribe (v_7)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 1; 1182
+-- test case No.26
+:execute v_2.unsubscribe (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > s /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE_QUEUE       unsubscribe @1         s /= Void:                   
+	-- > <00000000045B0138>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 1; 1229
+-- test case No.27
+:execute v_3.subscribe (v_5)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 1; 1267
+-- test case No.28
+:execute v_3.unsubscribe (v_8)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 1; 1309
+-- test case No.29
+:execute create {MESSAGE [STRING_8]} v_11.make (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > initial /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE             make @1                initial /= Void:             
+	-- > <00000000045F49E8>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @3                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 1; 1355
+-- test case No.30
+:execute v_3.publish (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE_QUEUE       publish @1             m /= Void:                   
+	-- > <00000000045C1388>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 1; 1401
+-- test case No.31
+:execute create {PRINT_SUBSCRIBER} v_12
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 1; 1439
+-- test case No.32
+:execute create {MESSAGE [STRING_8]} v_13.make (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > initial /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE             make @1                initial /= Void:             
+	-- > <00000000045FC9A8>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @3                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 1; 1484
+-- test case No.33
+:execute v_3.subscribe (v_8)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 1; 1521
+-- test case No.34
+:execute v_12.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <00000000045FAA88>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 1; 1569
+-- test case No.35
+:execute v_7.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <00000000045CCDD8>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 1; 1613
+-- test case No.36
+:execute v_2.subscribe (v_8)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 1; 1660
+-- test case No.37
+:execute v_3.subscribe (v_8)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 1; 1699
+-- test case No.38
+:execute create {MESSAGE [detachable separate ANY]} v_14.make (v_12)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 1; 1734
+-- test case No.39
+:execute v_3.publish (v_14)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 1; 1780
+-- test case No.40
+:execute v_7.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <00000000045CCDD8>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 1; 1828
+-- test case No.41
+:execute v_2.publish (v_14)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 1; 1870
+-- test case No.42
+:execute v_7.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <00000000045CCDD8>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 1; 1915
+-- test case No.43
+:execute v_6.subscribe (v_7)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 1; 1953
+-- test case No.44
+:execute create {PRINT_SUBSCRIBER} v_15
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 1; 1988
+-- test case No.45
+:execute v_2.subscribe (v_15)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 2; 2025
+-- test case No.46
+:execute v_12.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <00000000045FAA88>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 2; 2069
+-- test case No.47
+:execute v_3.unsubscribe (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > s /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE_QUEUE       unsubscribe @1         s /= Void:                   
+	-- > <00000000045C1388>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 2; 2115
+-- test case No.48
+:execute v_16 := v_14.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_16
+	-- > ---multi-line-value-start---
+	-- > PRINT_SUBSCRIBER
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 2; 2161
+-- test case No.49
+:execute v_6.subscribe (v_10)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 2; 2199
+-- test case No.50
+:execute v_6.unsubscribe (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > s /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE_QUEUE       unsubscribe @1         s /= Void:                   
+	-- > <00000000045CAEB8>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 2; 2244
+-- test case No.51
+:execute v_4.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <00000000045C32A8>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 2; 2288
+-- test case No.52
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_17.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 2; 2326
+-- test case No.53
+:execute create {MESSAGE [detachable separate ANY]} v_18.make (v_10)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 2; 2364
+-- test case No.54
+:execute v_17.publish (v_18)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 2; 2403
+-- test case No.55
+:execute v_19 := v_14.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_19
+	-- > ---multi-line-value-start---
+	-- > PRINT_SUBSCRIBER
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 2; 2447
+-- test case No.56
+:execute v_2.unsubscribe (v_19)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 2; 2486
+-- test case No.57
+:execute v_2.subscribe (v_4)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 2; 2527
+-- test case No.58
+:execute v_5.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <00000000045C70A8>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 2; 2574
+-- test case No.59
+:execute v_6.unsubscribe (v_16)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 2; 2618
+-- test case No.60
+:execute v_20 := v_18.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_20
+	-- > ---multi-line-value-start---
+	-- > PRINT_SUBSCRIBER
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 2; 2663
+-- test case No.61
+:execute v_17.subscribe (v_12)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 2; 2700
+-- test case No.62
+:execute create {detachable separate ANY} v_21
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 2; 2737
+-- test case No.63
+:execute create {MESSAGE [detachable separate ANY]} v_22.make (v_21)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 2; 2774
+-- test case No.64
+:execute v_23 := v_22.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_23
+	-- > ---multi-line-value-start---
+	-- > ANY
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 2; 2818
+-- test case No.65
+:execute v_17.publish (v_18)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 2; 2863
+-- test case No.66
+:execute create {PRINT_SUBSCRIBER} v_24
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 2; 2899
+-- test case No.67
+:execute v_6.unsubscribe (v_24)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 2; 2934
+-- test case No.68
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_25.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 2; 2967
+-- test case No.69
+:execute v_25.publish (v_14)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 3; 3001
+-- test case No.70
+:execute v_17.subscribe (v_4)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 3; 3036
+-- test case No.71
+:execute create {detachable separate ANY} v_26
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 3; 3068
+-- test case No.72
+:execute create {MESSAGE [detachable separate ANY]} v_27.make (v_26)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 3; 3101
+-- test case No.73
+:execute v_28 := v_27.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_28
+	-- > ---multi-line-value-start---
+	-- > ANY
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 3; 3142
+-- test case No.74
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_29.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 3; 3176
+-- test case No.75
+:execute v_29.subscribe (v_12)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 3; 3210
+-- test case No.76
+:execute v_3.publish (v_14)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 3; 3253
+-- test case No.77
+:execute create {MESSAGE [STRING_8]} v_30.make (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > initial /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE             make @1                initial /= Void:             
+	-- > <0000000004668A98>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @3                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 3; 3295
+-- test case No.78
+:execute v_3.unsubscribe (v_8)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 3; 3333
+-- test case No.79
+:execute create {MESSAGE [STRING_8]} v_31.make (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > initial /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE             make @1                initial /= Void:             
+	-- > <000000000466DA38>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @3                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 3; 3379
+-- test case No.80
+:execute v_3.unsubscribe (v_5)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 3; 3414
+-- test case No.81
+:execute v_4.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <00000000045C32A8>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 3; 3458
+-- test case No.82
+:execute create {MESSAGE [STRING_8]} v_32.make (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > initial /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE             make @1                initial /= Void:             
+	-- > <0000000004675A28>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @3                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 3; 3500
+-- test case No.83
+:execute v_12.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <00000000045FAA88>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 3; 3544
+-- test case No.84
+:execute v_10.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <00000000045DEC98>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 3; 3587
+-- test case No.85
+:execute create {PRINT_SUBSCRIBER} v_33
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 3; 3628
+-- test case No.86
+:execute v_33.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <000000000467EB08>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 3; 3673
+-- test case No.87
+:execute v_34 := v_22.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_34
+	-- > ---multi-line-value-start---
+	-- > ANY
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 3; 3713
+-- test case No.88
+:execute create {PRINT_SUBSCRIBER} v_35
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 3; 3749
+-- test case No.89
+:execute create {STRING_8} v_36.make_from_cil (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 3; 3783
+-- test case No.90
+:execute create {STRING_8} v_37.make_from_separate (v_36)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 3; 3816
+-- test case No.91
+:execute create {MESSAGE [STRING_8]} v_38.make (v_37)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 3; 3849
+-- test case No.92
+:execute v_35.receive (v_38)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 3; 3885
+-- test case No.93
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_39.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 3; 3921
+-- test case No.94
+:execute create {PRINT_SUBSCRIBER} v_40
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 3; 3954
+-- test case No.95
+:execute v_39.unsubscribe (v_40)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 3; 3989
+-- test case No.96
+:execute v_41 := v_27.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_41
+	-- > ---multi-line-value-start---
+	-- > ANY
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4030
+-- test case No.97
+:execute v_7.receive (v_38)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4065
+-- test case No.98
+:execute v_12.receive (v_38)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4099
+-- test case No.99
+:execute v_4.receive (v_38)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4132
+-- test case No.100
+:execute v_8.receive (v_38)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4166
+-- test case No.101
+:execute v_42 := v_27.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_42
+	-- > ---multi-line-value-start---
+	-- > ANY
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4207
+-- test case No.102
+:execute v_6.publish (v_14)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4248
+-- test case No.103
+:execute v_43 := v_14.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_43
+	-- > ---multi-line-value-start---
+	-- > PRINT_SUBSCRIBER
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4288
+-- test case No.104
+:execute v_39.publish (v_27)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4321
+-- test case No.105
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_44.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4354
+-- test case No.106
+:execute v_44.subscribe (v_8)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4390
+-- test case No.107
+:execute create {MESSAGE [STRING_8]} v_45.make (v_37)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4423
+-- test case No.108
+:execute v_19.receive (v_45)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4457
+-- test case No.109
+:execute create {MESSAGE [detachable separate ANY]} v_46.make (v_42)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4490
+-- test case No.110
+:execute v_3.publish (v_46)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4530
+-- test case No.111
+:execute v_24.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <0000000004651218>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 4; 4582
+-- test case No.112
+:execute create {PRINT_SUBSCRIBER} v_47
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4615
+-- test case No.113
+:execute v_47.receive (v_45)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4649
+-- test case No.114
+:execute v_48 := v_46.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_48
+	-- > ---multi-line-value-start---
+	-- > ANY
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4689
+-- test case No.115
+:execute create {PRINT_SUBSCRIBER} v_49
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4723
+-- test case No.116
+:execute v_49.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <00000000046C41C8>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 4; 4764
+-- test case No.117
+:execute v_4.receive (v_45)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4798
+-- test case No.118
+:execute v_50 := v_46.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_50
+	-- > ---multi-line-value-start---
+	-- > ANY
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4839
+-- test case No.119
+:execute create {MESSAGE [STRING_8]} v_51.make (v_36)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4873
+-- test case No.120
+:execute v_40.receive (v_51)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4908
+-- test case No.121
+:execute v_2.unsubscribe (v_12)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4942
+-- test case No.122
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_52.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 4; 4976
+-- test case No.123
+:execute v_52.unsubscribe (v_40)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5011
+-- test case No.124
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_53.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5046
+-- test case No.125
+:execute v_53.unsubscribe (v_12)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5080
+-- test case No.126
+:execute create {MESSAGE [STRING_8]} v_54.make (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > initial /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE             make @1                initial /= Void:             
+	-- > <00000000046DC5E8>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @3                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 5; 5124
+-- test case No.127
+:execute v_3.unsubscribe (v_24)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5162
+-- test case No.128
+:execute v_2.subscribe (v_33)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5196
+-- test case No.129
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_55.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5231
+-- test case No.130
+:execute v_55.subscribe (v_24)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5265
+-- test case No.131
+:execute v_56 := v_27.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_56
+	-- > ---multi-line-value-start---
+	-- > ANY
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5306
+-- test case No.132
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_57.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5343
+-- test case No.133
+:execute v_57.unsubscribe (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > s /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE_QUEUE       unsubscribe @1         s /= Void:                   
+	-- > <00000000046EAE08>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 5; 5385
+-- test case No.134
+:execute v_58 := v_18.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_58
+	-- > ---multi-line-value-start---
+	-- > PRINT_SUBSCRIBER
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5428
+-- test case No.135
+:execute v_35.receive (v_38)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5473
+-- test case No.136
+:execute create {MESSAGE [detachable separate ANY]} v_59.make (v_35)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5506
+-- test case No.137
+:execute v_60 := v_59.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_60
+	-- > ---multi-line-value-start---
+	-- > PRINT_SUBSCRIBER
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5546
+-- test case No.138
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_61.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5580
+-- test case No.139
+:execute v_61.unsubscribe (v_10)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5613
+-- test case No.140
+:execute v_2.subscribe (v_20)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5648
+-- test case No.141
+:execute v_4.receive (v_51)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5683
+-- test case No.142
+:execute v_15.receive (v_51)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5718
+-- test case No.143
+:execute v_55.unsubscribe (v_58)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5756
+-- test case No.144
+:execute v_6.unsubscribe (v_60)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5793
+-- test case No.145
+:execute v_16.receive (v_38)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5828
+-- test case No.146
+:execute v_44.publish (v_59)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5868
+-- test case No.147
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_62.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5903
+-- test case No.148
+:execute v_62.publish (v_18)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5937
+-- test case No.149
+:execute create {PRINT_SUBSCRIBER} v_63
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 5; 5973
+-- test case No.150
+:execute v_55.unsubscribe (v_63)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6009
+-- test case No.151
+:execute v_53.publish (v_51)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6044
+-- test case No.152
+:execute create {PRINT_SUBSCRIBER} v_64
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6078
+-- test case No.153
+:execute v_64.receive (v_38)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6112
+-- test case No.154
+:execute v_65 := v_27.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_65
+	-- > ---multi-line-value-start---
+	-- > ANY
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6153
+-- test case No.155
+:execute v_66 := v_27.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_66
+	-- > ---multi-line-value-start---
+	-- > ANY
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6197
+-- test case No.156
+:execute v_61.subscribe (v_7)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6234
+-- test case No.157
+:execute v_19.receive (v_38)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6269
+-- test case No.158
+:execute v_57.subscribe (v_10)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6303
+-- test case No.159
+:execute create {PRINT_SUBSCRIBER} v_67
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6343
+-- test case No.160
+:execute v_29.unsubscribe (v_67)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6379
+-- test case No.161
+:execute v_64.receive (v_45)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6417
+-- test case No.162
+:execute v_62.publish (v_46)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6452
+-- test case No.163
+:execute create {MESSAGE [STRING_8]} v_68.make (v_36)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6487
+-- test case No.164
+:execute v_58.receive (v_68)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6523
+-- test case No.165
+:execute v_39.publish (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE_QUEUE       publish @1             m /= Void:                   
+	-- > <0000000004691168>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 6; 6567
+-- test case No.166
+:execute v_69 := v_59.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_69
+	-- > ---multi-line-value-start---
+	-- > PRINT_SUBSCRIBER
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6607
+-- test case No.167
+:execute create {MESSAGE [detachable separate ANY]} v_70.make (v_4)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6641
+-- test case No.168
+:execute v_71 := v_70.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_71
+	-- > ---multi-line-value-start---
+	-- > PRINT_SUBSCRIBER
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6680
+-- test case No.169
+:execute v_2.subscribe (v_12)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6714
+-- test case No.170
+:execute v_52.unsubscribe (v_7)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6748
+-- test case No.171
+:execute v_72 := v_22.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_72
+	-- > ---multi-line-value-start---
+	-- > ANY
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6790
+-- test case No.172
+:execute v_61.subscribe (v_5)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6824
+-- test case No.173
+:execute create {MESSAGE [detachable separate ANY]} v_73.make (v_61)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6858
+-- test case No.174
+:execute v_62.publish (v_73)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6895
+-- test case No.175
+:execute v_12.receive (v_45)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6930
+-- test case No.176
+:execute create {MESSAGE [detachable separate ANY]} v_74.make (v_43)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 6; 6963
+-- test case No.177
+:execute v_57.publish (v_74)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7003
+-- test case No.178
+:execute create {PRINT_SUBSCRIBER} v_75
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7036
+-- test case No.179
+:execute v_29.subscribe (v_75)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7070
+-- test case No.180
+:execute v_39.subscribe (v_67)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7105
+-- test case No.181
+:execute v_76 := v_27.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_76
+	-- > ---multi-line-value-start---
+	-- > ANY
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7147
+-- test case No.182
+:execute create {PRINT_SUBSCRIBER} v_77
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7187
+-- test case No.183
+:execute v_44.unsubscribe (v_77)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7221
+-- test case No.184
+:execute v_3.subscribe (v_75)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7265
+-- test case No.185
+:execute v_2.unsubscribe (v_49)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7302
+-- test case No.186
+:execute v_44.publish (v_38)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7336
+-- test case No.187
+:execute v_78 := v_51.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_78
+	-- > ---multi-line-value-start---
+	-- > STRING_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7381
+-- test case No.188
+:execute v_29.unsubscribe (v_5)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7417
+-- test case No.189
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_79.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7451
+-- test case No.190
+:execute create {MESSAGE [detachable separate ANY]} v_80.make (v_25)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7484
+-- test case No.191
+:execute v_79.publish (v_80)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7517
+-- test case No.192
+:execute v_81 := v_59.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_81
+	-- > ---multi-line-value-start---
+	-- > PRINT_SUBSCRIBER
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7557
+-- test case No.193
+:execute v_69.receive (v_45)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7592
+-- test case No.194
+:execute v_6.unsubscribe (v_63)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7627
+-- test case No.195
+:execute create {PRINT_SUBSCRIBER} v_82
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7661
+-- test case No.196
+:execute v_82.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <0000000004779608>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 7; 7703
+-- test case No.197
+:execute v_10.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <00000000045DEC98>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 7; 7745
+-- test case No.198
+:execute v_83 := v_22.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_83
+	-- > ---multi-line-value-start---
+	-- > ANY
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7787
+-- test case No.199
+:execute v_33.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <000000000467EB08>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 7; 7830
+-- test case No.200
+:execute v_84 := v_45.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_84
+	-- > ---multi-line-value-start---
+	-- > STRING_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7870
+-- test case No.201
+:execute v_85 := v_14.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_85
+	-- > ---multi-line-value-start---
+	-- > PRINT_SUBSCRIBER
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7910
+-- test case No.202
+:execute v_86 := v_73.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_86
+	-- > ---multi-line-value-start---
+	-- > MESSAGE_QUEUE [separate ANY]
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7950
+-- test case No.203
+:execute v_17.unsubscribe (v_81)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 7; 7987
+-- test case No.204
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_87.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8026
+-- test case No.205
+:execute v_87.unsubscribe (v_40)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8059
+-- test case No.206
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_88.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8092
+-- test case No.207
+:execute create {PRINT_SUBSCRIBER} v_89
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8127
+-- test case No.208
+:execute v_88.unsubscribe (v_89)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8160
+-- test case No.209
+:execute v_44.unsubscribe (v_58)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8194
+-- test case No.210
+:execute v_82.receive (v_38)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8228
+-- test case No.211
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_90.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8262
+-- test case No.212
+:execute create {PRINT_SUBSCRIBER} v_91
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8296
+-- test case No.213
+:execute v_90.subscribe (v_91)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8330
+-- test case No.214
+:execute create {PRINT_SUBSCRIBER} v_92
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8364
+-- test case No.215
+:execute v_92.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <00000000047A8928>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 8; 8408
+-- test case No.216
+:execute create {STRING_8} v_93.make_from_separate (v_36)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8440
+-- test case No.217
+:execute create {MESSAGE [STRING_8]} v_94.make (v_93)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8473
+-- test case No.218
+:execute v_58.receive (v_94)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8507
+-- test case No.219
+:execute v_29.publish (v_45)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8541
+-- test case No.220
+:execute v_2.subscribe (v_10)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8575
+-- test case No.221
+:execute create {PRINT_SUBSCRIBER} v_95
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8607
+-- test case No.222
+:execute v_55.unsubscribe (v_95)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8642
+-- test case No.223
+:execute create {PRINT_SUBSCRIBER} v_96
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8676
+-- test case No.224
+:execute v_86.unsubscribe (v_96)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 1
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > unsubscribe
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4   unsubscribe:                 
+	-- > <00000000045A7588>                         Feature call on void target.  Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 8; 8714
+-- test case No.225
+:execute v_96.receive (v_45)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8749
+-- test case No.226
+:execute create {PRINT_SUBSCRIBER} v_97
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8792
+-- test case No.227
+:execute v_97.receive (v_45)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8827
+-- test case No.228
+:execute create {PRINT_SUBSCRIBER} v_98
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8862
+-- test case No.229
+:execute v_98.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <00000000047C61C8>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 8; 8903
+-- test case No.230
+:execute v_99 := v_22.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_99
+	-- > ---multi-line-value-start---
+	-- > ANY
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8943
+-- test case No.231
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_100.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 8; 8975
+-- test case No.232
+:execute create {PRINT_SUBSCRIBER} v_101
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9008
+-- test case No.233
+:execute v_100.unsubscribe (v_101)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9042
+-- test case No.234
+:execute create {PRINT_SUBSCRIBER} v_102
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9075
+-- test case No.235
+:execute v_102.receive (v_38)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9109
+-- test case No.236
+:execute v_64.receive (v_38)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9143
+-- test case No.237
+:execute create {PRINT_SUBSCRIBER} v_103
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9176
+-- test case No.238
+:execute v_103.receive (v_68)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9210
+-- test case No.239
+:execute v_33.receive (v_68)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9243
+-- test case No.240
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_104.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9276
+-- test case No.241
+:execute v_104.subscribe (v_63)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9310
+-- test case No.242
+:execute create {MESSAGE [detachable separate ANY]} v_105.make (v_40)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9342
+-- test case No.243
+:execute v_106 := v_105.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_106
+	-- > ---multi-line-value-start---
+	-- > PRINT_SUBSCRIBER
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9384
+-- test case No.244
+:execute create {MESSAGE [detachable separate ANY]} v_107.make (v_82)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9416
+-- test case No.245
+:execute v_61.publish (v_107)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9459
+-- test case No.246
+:execute v_108 := v_51.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_108
+	-- > ---multi-line-value-start---
+	-- > STRING_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9498
+-- test case No.247
+:execute v_101.receive (v_68)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9533
+-- test case No.248
+:execute create {MESSAGE [STRING_8]} v_109.make (v_93)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9571
+-- test case No.249
+:execute v_7.receive (v_109)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9605
+-- test case No.250
+:execute v_98.receive (v_94)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9638
+-- test case No.251
+:execute v_98.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <00000000047C61C8>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 9; 9679
+-- test case No.252
+:execute v_103.receive (v_38)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9714
+-- test case No.253
+:execute create {MESSAGE [STRING_8]} v_110.make (v_84)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9747
+-- test case No.254
+:execute v_12.receive (v_110)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9787
+-- test case No.255
+:execute v_55.unsubscribe (v_64)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9824
+-- test case No.256
+:execute v_17.publish (v_59)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9883
+-- test case No.257
+:execute v_79.publish (v_27)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9920
+-- test case No.258
+:execute v_111 := v_27.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_111
+	-- > ---multi-line-value-start---
+	-- > ANY
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9964
+-- test case No.259
+:execute create {PRINT_SUBSCRIBER} v_112
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 9; 9999
+-- test case No.260
+:execute v_52.subscribe (v_112)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10034
+-- test case No.261
+:execute v_113 := v_110.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_113
+	-- > ---multi-line-value-start---
+	-- > STRING_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10076
+-- test case No.262
+:execute v_112.receive (v_45)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10110
+-- test case No.263
+:execute v_35.receive (v_94)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10143
+-- test case No.264
+:execute v_61.publish (v_27)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10185
+-- test case No.265
+:execute v_100.subscribe (v_47)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10219
+-- test case No.266
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_114.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10255
+-- test case No.267
+:execute v_114.subscribe (v_64)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10291
+-- test case No.268
+:execute v_52.publish (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE_QUEUE       publish @1             m /= Void:                   
+	-- > <00000000046D4918>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 10; 10336
+-- test case No.269
+:execute v_79.publish (v_73)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10371
+-- test case No.270
+:execute v_115 := v_45.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_115
+	-- > ---multi-line-value-start---
+	-- > STRING_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10410
+-- test case No.271
+:execute v_116 := v_14.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_116
+	-- > ---multi-line-value-start---
+	-- > PRINT_SUBSCRIBER
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10458
+-- test case No.272
+:execute v_17.unsubscribe (v_24)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10493
+-- test case No.273
+:execute v_100.unsubscribe (v_64)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10527
+-- test case No.274
+:execute v_89.receive (v_94)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10562
+-- test case No.275
+:execute v_7.receive (v_110)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10597
+-- test case No.276
+:execute v_117 := v_38.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_117
+	-- > ---multi-line-value-start---
+	-- > STRING_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10638
+-- test case No.277
+:execute v_118 := v_51.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_118
+	-- > ---multi-line-value-start---
+	-- > STRING_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10679
+-- test case No.278
+:execute v_43.receive (v_109)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10713
+-- test case No.279
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_119.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10746
+-- test case No.280
+:execute v_119.publish (v_18)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10780
+-- test case No.281
+:execute v_53.unsubscribe (v_75)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10815
+-- test case No.282
+:execute v_116.receive (v_109)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10853
+-- test case No.283
+:execute v_25.subscribe (v_12)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10889
+-- test case No.284
+:execute create {MESSAGE [STRING_8]} v_120.make (v_117)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10923
+-- test case No.285
+:execute v_85.receive (v_120)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10959
+-- test case No.286
+:execute v_102.receive (v_45)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 10; 10993
+-- test case No.287
+:execute v_88.publish (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE_QUEUE       publish @1             m /= Void:                   
+	-- > <0000000004798FF8>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 11; 11035
+-- test case No.288
+:execute v_104.subscribe (v_71)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11069
+-- test case No.289
+:execute v_101.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <00000000047D0B18>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 11; 11112
+-- test case No.290
+:execute create {PRINT_SUBSCRIBER} v_121
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11146
+-- test case No.291
+:execute v_121.receive (v_38)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11181
+-- test case No.292
+:execute v_122 := v_45.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_122
+	-- > ---multi-line-value-start---
+	-- > STRING_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11221
+-- test case No.293
+:execute create {MESSAGE [STRING_8]} v_123.make (v_84)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11256
+-- test case No.294
+:execute v_96.receive (v_123)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11298
+-- test case No.295
+:execute v_87.publish (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE_QUEUE       publish @1             m /= Void:                   
+	-- > <00000000047951A8>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 11; 11344
+-- test case No.296
+:execute v_116.receive (v_110)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11381
+-- test case No.297
+:execute v_62.subscribe (v_4)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11417
+-- test case No.298
+:execute v_124 := v_68.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_124
+	-- > ---multi-line-value-start---
+	-- > STRING_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11460
+-- test case No.299
+:execute v_61.unsubscribe (v_49)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11496
+-- test case No.300
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_125.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11530
+-- test case No.301
+:execute v_125.subscribe (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > s /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE_QUEUE       subscribe @1           s /= Void:                   
+	-- > <000000000486C6B8>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 11; 11581
+-- test case No.302
+:execute v_3.subscribe (v_67)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11616
+-- test case No.303
+:execute v_112.receive (v_123)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11654
+-- test case No.304
+:execute v_81.receive (v_38)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11689
+-- test case No.305
+:execute v_33.receive (v_68)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11723
+-- test case No.306
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_126.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11758
+-- test case No.307
+:execute v_126.publish (v_110)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11794
+-- test case No.308
+:execute v_100.subscribe (v_121)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11829
+-- test case No.309
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_127.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11865
+-- test case No.310
+:execute v_127.subscribe (v_35)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11900
+-- test case No.311
+:execute v_119.subscribe (v_98)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11935
+-- test case No.312
+:execute v_5.receive (v_38)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 11; 11971
+-- test case No.313
+:execute v_128 := v_45.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_128
+	-- > ---multi-line-value-start---
+	-- > STRING_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12011
+-- test case No.314
+:execute v_90.subscribe (v_5)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12046
+-- test case No.315
+:execute v_129 := v_74.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_129
+	-- > ---multi-line-value-start---
+	-- > PRINT_SUBSCRIBER
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12086
+-- test case No.316
+:execute v_130 := v_59.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_130
+	-- > ---multi-line-value-start---
+	-- > PRINT_SUBSCRIBER
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12127
+-- test case No.317
+:execute create {PRINT_SUBSCRIBER} v_131
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12161
+-- test case No.318
+:execute v_131.receive (v_94)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12194
+-- test case No.319
+:execute v_132 := v_38.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_132
+	-- > ---multi-line-value-start---
+	-- > STRING_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12234
+-- test case No.320
+:execute v_17.publish (v_105)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12277
+-- test case No.321
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_133.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12311
+-- test case No.322
+:execute v_133.unsubscribe (v_97)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12345
+-- test case No.323
+:execute create {MESSAGE [STRING_8]} v_134.make (v_93)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12378
+-- test case No.324
+:execute v_75.receive (v_134)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12412
+-- test case No.325
+:execute v_57.publish (v_73)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12451
+-- test case No.326
+:execute v_35.receive (v_123)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12486
+-- test case No.327
+:execute create {PRINT_SUBSCRIBER} v_135
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12519
+-- test case No.328
+:execute v_90.subscribe (v_135)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12554
+-- test case No.329
+:execute create {MESSAGE [detachable separate ANY]} v_136.make (v_23)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12588
+-- test case No.330
+:execute v_25.publish (v_136)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12627
+-- test case No.331
+:execute v_62.unsubscribe (v_20)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12662
+-- test case No.332
+:execute v_119.publish (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE_QUEUE       publish @1             m /= Void:                   
+	-- > <000000000483CB48>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 12; 12713
+-- test case No.333
+:execute v_137 := v_70.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_137
+	-- > ---multi-line-value-start---
+	-- > PRINT_SUBSCRIBER
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12754
+-- test case No.334
+:execute v_12.receive (v_45)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12789
+-- test case No.335
+:execute v_114.unsubscribe (v_92)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12824
+-- test case No.336
+:execute v_100.unsubscribe (v_12)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12860
+-- test case No.337
+:execute create {PRINT_SUBSCRIBER} v_138
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12895
+-- test case No.338
+:execute v_55.subscribe (v_138)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12929
+-- test case No.339
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_139.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12962
+-- test case No.340
+:execute v_139.subscribe (v_116)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 12; 12997
+-- test case No.341
+:execute v_57.subscribe (v_131)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:execute v_140 := {CHARACTER_8} '%/29/'
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_140
+	-- > ---multi-line-value-start---
+	-- > CHARACTER_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:execute v_141 := {INTEGER_32} 0
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_141
+	-- > ---multi-line-value-start---
+	-- > INTEGER_32
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13058
+-- test case No.342
+:execute create {STRING_8} v_142.make_filled (v_140, v_141)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13093
+-- test case No.343
+:execute create {MESSAGE [STRING_8]} v_143.make (v_142)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13126
+-- test case No.344
+:execute v_95.receive (v_143)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13161
+-- test case No.345
+:execute v_90.publish (v_109)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13195
+-- test case No.346
+:execute v_62.publish (v_107)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13234
+-- test case No.347
+:execute v_3.unsubscribe (v_7)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13268
+-- test case No.348
+:execute v_25.publish (v_45)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13303
+-- test case No.349
+:execute v_92.receive (v_51)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13337
+-- test case No.350
+:execute create {PRINT_SUBSCRIBER} v_144
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13370
+-- test case No.351
+:execute v_144.receive (v_68)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13405
+-- test case No.352
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_145.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13443
+-- test case No.353
+:execute v_145.unsubscribe (v_97)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13477
+-- test case No.354
+:execute v_90.unsubscribe (v_102)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13511
+-- test case No.355
+:execute v_114.subscribe (v_16)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13544
+-- test case No.356
+:execute create {PRINT_SUBSCRIBER} v_146
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13579
+-- test case No.357
+:execute v_146.receive (v_94)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13614
+-- test case No.358
+:execute v_133.publish (v_134)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13649
+-- test case No.359
+:execute v_90.subscribe (v_5)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13684
+-- test case No.360
+:execute v_119.publish (v_45)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13719
+-- test case No.361
+:execute v_44.unsubscribe (v_10)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13758
+-- test case No.362
+:execute v_139.subscribe (v_137)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13801
+-- test case No.363
+:execute v_86.publish (v_123)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 1
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > publish
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4   publish:                     
+	-- > <00000000045A7588>                         Feature call on void target.  Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 13; 13839
+-- test case No.364
+:execute v_40.receive (v_94)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13875
+-- test case No.365
+:execute v_147 := v_59.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_147
+	-- > ---multi-line-value-start---
+	-- > PRINT_SUBSCRIBER
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13917
+-- test case No.366
+:execute v_100.unsubscribe (v_10)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13951
+-- test case No.367
+:execute create {PRINT_SUBSCRIBER} v_148
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 13; 13987
+-- test case No.368
+:execute v_148.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <0000000004904B68>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 14; 14030
+-- test case No.369
+:execute v_63.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <0000000004710A38>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 14; 14074
+-- test case No.370
+:execute v_145.unsubscribe (v_47)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14109
+-- test case No.371
+:execute v_149 := v_134.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_149
+	-- > ---multi-line-value-start---
+	-- > STRING_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14149
+-- test case No.372
+:execute create {MESSAGE [detachable separate ANY]} v_150.make (v_88)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14182
+-- test case No.373
+:execute v_133.publish (v_150)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14217
+-- test case No.374
+:execute v_129.receive (v_123)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14250
+-- test case No.375
+:execute v_151 := v_46.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_151
+	-- > ---multi-line-value-start---
+	-- > ANY
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14293
+-- test case No.376
+:execute create {PRINT_SUBSCRIBER} v_152
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14326
+-- test case No.377
+:execute v_90.unsubscribe (v_152)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14360
+-- test case No.378
+:execute v_153 := v_120.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_153
+	-- > ---multi-line-value-start---
+	-- > STRING_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14401
+-- test case No.379
+:execute v_33.receive (v_110)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14437
+-- test case No.380
+:execute v_154 := v_22.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_154
+	-- > ---multi-line-value-start---
+	-- > ANY
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14477
+-- test case No.381
+:execute v_135.receive (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > m /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+	-- > <00000000048A9488>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 14; 14519
+-- test case No.382
+:execute v_55.subscribe (v_91)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14553
+-- test case No.383
+:execute create {PRINT_SUBSCRIBER} v_155
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14586
+-- test case No.384
+:execute v_155.receive (v_68)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14620
+-- test case No.385
+:execute v_39.subscribe (v_135)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14653
+-- test case No.386
+:execute v_79.unsubscribe (v_147)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14687
+-- test case No.387
+:execute create {PRINT_SUBSCRIBER} v_156
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14720
+-- test case No.388
+:execute v_156.receive (v_134)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14754
+-- test case No.389
+:execute v_88.subscribe (v_49)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14788
+-- test case No.390
+:execute create {PRINT_SUBSCRIBER} v_157
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14821
+-- test case No.391
+:execute v_157.receive (v_120)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14855
+-- test case No.392
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_158.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14896
+-- test case No.393
+:execute v_158.subscribe (v_129)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14931
+-- test case No.394
+:execute v_139.subscribe (v_5)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14964
+-- test case No.395
+:execute v_25.subscribe (v_81)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 14; 14998
+-- test case No.396
+:execute create {PRINT_SUBSCRIBER} v_159
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15032
+-- test case No.397
+:execute v_159.receive (v_68)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15066
+-- test case No.398
+:execute v_82.receive (v_51)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15099
+-- test case No.399
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_160.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15133
+-- test case No.400
+:execute v_160.publish (v_123)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15167
+-- test case No.401
+:execute v_161 := v_59.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_161
+	-- > ---multi-line-value-start---
+	-- > PRINT_SUBSCRIBER
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15208
+-- test case No.402
+:execute v_162 := v_109.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_162
+	-- > ---multi-line-value-start---
+	-- > STRING_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15248
+-- test case No.403
+:execute create {PRINT_SUBSCRIBER} v_163
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15281
+-- test case No.404
+:execute v_125.subscribe (v_163)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15316
+-- test case No.405
+:execute v_133.subscribe (v_146)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15350
+-- test case No.406
+:execute v_145.subscribe (v_19)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15385
+-- test case No.407
+:execute v_29.unsubscribe (v_67)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15419
+-- test case No.408
+:execute v_6.unsubscribe (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: exception
+	-- > 3
+	-- > execute_byte_code
+	-- > ITP_INTERPRETER
+	-- > s /= Void
+	-- > False
+	-- > ---multi-line-value-start---
+	-- > ******************************** Thread exception *****************************
+	-- > In thread           Root thread            0x0 (thread id)
+	-- > *******************************************************************************
+	-- > -------------------------------------------------------------------------------
+	-- > Class / Object      Routine                Nature of exception           Effect
+	-- > -------------------------------------------------------------------------------
+	-- > MESSAGE_QUEUE       unsubscribe @1         s /= Void:                   
+	-- > <00000000045CAEB8>                         Precondition violated.        Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ITP_INTERPRETER     execute_byte_code @4                                
+	-- > <00000000045A7588>                         Routine failure.              Fail
+	-- > -------------------------------------------------------------------------------
+	-- > ---multi-line-value-end---
+	-- > done:
+-- time stamp: exec; 15; 15461
+-- test case No.409
+:execute v_158.unsubscribe (v_155)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15495
+-- test case No.410
+:execute create {MESSAGE [detachable separate ANY]} v_164.make (v_66)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15528
+-- test case No.411
+:execute v_165 := v_164.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_165
+	-- > ---multi-line-value-start---
+	-- > ANY
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15568
+-- test case No.412
+:execute v_166 := v_143.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_166
+	-- > ---multi-line-value-start---
+	-- > STRING_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15608
+-- test case No.413
+:execute v_67.receive (v_45)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15642
+-- test case No.414
+:execute v_167 := v_143.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_167
+	-- > ---multi-line-value-start---
+	-- > STRING_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15681
+-- test case No.415
+:execute v_168 := v_150.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_168
+	-- > ---multi-line-value-start---
+	-- > MESSAGE_QUEUE [separate ANY]
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15723
+-- test case No.416
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_169.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15757
+-- test case No.417
+:execute v_169.publish (v_134)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15792
+-- test case No.418
+:execute create {PRINT_SUBSCRIBER} v_170
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15825
+-- test case No.419
+:execute v_3.unsubscribe (v_170)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15861
+-- test case No.420
+:execute create {PRINT_SUBSCRIBER} v_171
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15896
+-- test case No.421
+:execute v_2.unsubscribe (v_171)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15932
+-- test case No.422
+:execute v_139.unsubscribe (v_92)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 15; 15966
+-- test case No.423
+:execute v_172 := v_110.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_172
+	-- > ---multi-line-value-start---
+	-- > STRING_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16006
+-- test case No.424
+:execute v_169.unsubscribe (v_64)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16041
+-- test case No.425
+:execute v_119.unsubscribe (v_91)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16075
+-- test case No.426
+:execute create {MESSAGE [detachable separate ANY]} v_173.make (v_19)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16115
+-- test case No.427
+:execute v_174 := v_173.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_174
+	-- > ---multi-line-value-start---
+	-- > PRINT_SUBSCRIBER
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16156
+-- test case No.428
+:execute v_33.receive (v_51)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16189
+-- test case No.429
+:execute v_175 := v_38.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_175
+	-- > ---multi-line-value-start---
+	-- > STRING_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16230
+-- test case No.430
+:execute v_39.unsubscribe (v_7)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16264
+-- test case No.431
+:execute create {PRINT_SUBSCRIBER} v_176
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16298
+-- test case No.432
+:execute v_176.receive (v_110)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16333
+-- test case No.433
+:execute v_160.subscribe (v_146)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16368
+-- test case No.434
+:execute create {PRINT_SUBSCRIBER} v_177
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16401
+-- test case No.435
+:execute v_57.subscribe (v_177)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16435
+-- test case No.436
+:execute v_126.publish (v_134)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16469
+-- test case No.437
+:execute v_178 := v_74.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_178
+	-- > ---multi-line-value-start---
+	-- > PRINT_SUBSCRIBER
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16537
+-- test case No.438
+:execute v_97.receive (v_123)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16573
+-- test case No.439
+:execute create {STRING_8} v_179.make_from_cil (v_1)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16607
+-- test case No.440
+:execute create {MESSAGE [STRING_8]} v_180.make (v_179)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16639
+-- test case No.441
+:execute v_144.receive (v_180)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16674
+-- test case No.442
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_181.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16707
+-- test case No.443
+:execute v_181.unsubscribe (v_77)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16742
+-- test case No.444
+:execute v_75.receive (v_51)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16780
+-- test case No.445
+:execute create {PRINT_SUBSCRIBER} v_182
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16814
+-- test case No.446
+:execute v_182.receive (v_51)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16848
+-- test case No.447
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_183.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16886
+-- test case No.448
+:execute v_183.subscribe (v_156)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16922
+-- test case No.449
+:execute create {MESSAGE [detachable separate ANY]} v_184.make (v_80)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 16; 16956
+-- test case No.450
+:execute v_25.publish (v_184)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17000
+-- test case No.451
+:execute v_185 := v_51.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_185
+	-- > ---multi-line-value-start---
+	-- > STRING_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17039
+-- test case No.452
+:execute v_186 := v_14.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_186
+	-- > ---multi-line-value-start---
+	-- > PRINT_SUBSCRIBER
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17080
+-- test case No.453
+:execute v_3.subscribe (v_35)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17114
+-- test case No.454
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_187.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17147
+-- test case No.455
+:execute v_187.publish (v_109)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17183
+-- test case No.456
+:execute v_127.subscribe (v_43)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17217
+-- test case No.457
+:execute create {PRINT_SUBSCRIBER} v_188
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17250
+-- test case No.458
+:execute v_188.receive (v_45)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17283
+-- test case No.459
+:execute v_139.publish (v_22)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17341
+-- test case No.460
+:execute v_189 := v_68.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_189
+	-- > ---multi-line-value-start---
+	-- > STRING_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17391
+-- test case No.461
+:execute v_3.subscribe (v_129)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17427
+-- test case No.462
+:execute v_106.receive (v_51)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17462
+-- test case No.463
+:execute v_12.receive (v_120)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17496
+-- test case No.464
+:execute v_71.receive (v_180)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17531
+-- test case No.465
+:execute v_116.receive (v_110)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17564
+-- test case No.466
+:execute create {PRINT_SUBSCRIBER} v_190
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17599
+-- test case No.467
+:execute v_190.receive (v_134)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17634
+-- test case No.468
+:execute v_67.receive (v_38)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17668
+-- test case No.469
+:execute v_53.unsubscribe (v_49)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17702
+-- test case No.470
+:execute v_87.subscribe (v_146)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17738
+-- test case No.471
+:execute v_5.receive (v_68)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17772
+-- test case No.472
+:execute create {PRINT_SUBSCRIBER} v_191
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17806
+-- test case No.473
+:execute v_191.receive (v_120)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17839
+-- test case No.474
+:execute v_121.receive (v_134)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17874
+-- test case No.475
+:execute v_192 := v_123.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_192
+	-- > ---multi-line-value-start---
+	-- > STRING_8
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17914
+-- test case No.476
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_193.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17948
+-- test case No.477
+:execute v_193.publish (v_94)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 17; 17982
+-- test case No.478
+:execute v_88.publish (v_80)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18021
+-- test case No.479
+:execute v_90.subscribe (v_96)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18058
+-- test case No.480
+:execute v_194 := v_150.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_194
+	-- > ---multi-line-value-start---
+	-- > MESSAGE_QUEUE [separate ANY]
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18099
+-- test case No.481
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_195.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18134
+-- test case No.482
+:execute v_195.unsubscribe (v_121)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18168
+-- test case No.483
+:execute v_90.publish (v_173)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18219
+-- test case No.484
+:execute create {PRINT_SUBSCRIBER} v_196
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18252
+-- test case No.485
+:execute v_6.subscribe (v_196)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18287
+-- test case No.486
+:execute v_98.receive (v_180)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18320
+-- test case No.487
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_197.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18355
+-- test case No.488
+:execute v_197.subscribe (v_98)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18389
+-- test case No.489
+:execute v_160.subscribe (v_161)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18427
+-- test case No.490
+:execute v_85.receive (v_68)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18461
+-- test case No.491
+:execute v_125.unsubscribe (v_182)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18496
+-- test case No.492
+:execute v_174.receive (v_38)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18531
+-- test case No.493
+:execute v_20.receive (v_68)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18569
+-- test case No.494
+:execute create {MESSAGE [STRING_8]} v_198.make (v_166)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18604
+-- test case No.495
+:execute v_130.receive (v_198)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18645
+-- test case No.496
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_199.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18679
+-- test case No.497
+:execute v_199.unsubscribe (v_75)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18714
+-- test case No.498
+:execute create {MESSAGE_QUEUE [detachable separate ANY]} v_200.make
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18748
+-- test case No.499
+:execute v_200.publish (v_184)
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+-- time stamp: exec; 18; 18783
+-- test case No.500
+:execute v_201 := v_70.payload
+	-- > ---multi-line-value-start---
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:type v_201
+	-- > ---multi-line-value-start---
+	-- > PRINT_SUBSCRIBER
+	-- > ---multi-line-value-end---
+	-- > status: success
+	-- > done:
+:quit
+-- Warning: proxy was not able to terminate interpreter.
+-- Warning: proxy forced termination of interpreter.

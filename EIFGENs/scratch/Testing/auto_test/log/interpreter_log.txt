@@ -1,0 +1,3560 @@
+<session>
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='s /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE_QUEUE       subscribe @1           s /= Void:                   
+<00000000045B0138>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='s /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE_QUEUE       unsubscribe @1         s /= Void:                   
+<00000000045B0138>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='s /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE_QUEUE       unsubscribe @1         s /= Void:                   
+<00000000045B0138>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='s /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE_QUEUE       unsubscribe @1         s /= Void:                   
+<00000000045B0138>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='s /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE_QUEUE       unsubscribe @1         s /= Void:                   
+<00000000045B0138>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='initial /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE             make @1                initial /= Void:             
+<00000000045D2B48>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<00000000045CCDD8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE_QUEUE       publish @1             m /= Void:                   
+<00000000045C1388>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE_QUEUE       publish @1             m /= Void:                   
+<00000000045B0138>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<00000000045D0C28>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<00000000045D0C28>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE_QUEUE       publish @1             m /= Void:                   
+<00000000045B0138>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='s /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE_QUEUE       unsubscribe @1         s /= Void:                   
+<00000000045B0138>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='initial /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE             make @1                initial /= Void:             
+<00000000045F49E8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE_QUEUE       publish @1             m /= Void:                   
+<00000000045C1388>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='initial /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE             make @1                initial /= Void:             
+<00000000045FC9A8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<00000000045FAA88>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<00000000045CCDD8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<00000000045CCDD8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<00000000045CCDD8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<00000000045FAA88>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='s /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE_QUEUE       unsubscribe @1         s /= Void:                   
+<00000000045C1388>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='s /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE_QUEUE       unsubscribe @1         s /= Void:                   
+<00000000045CAEB8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<00000000045C32A8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<00000000045C70A8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='initial /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE             make @1                initial /= Void:             
+<0000000004668A98>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='initial /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE             make @1                initial /= Void:             
+<000000000466DA38>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<00000000045C32A8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='initial /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE             make @1                initial /= Void:             
+<0000000004675A28>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<00000000045FAA88>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<00000000045DEC98>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<000000000467EB08>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<0000000004651218>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<00000000046C41C8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='initial /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE             make @1                initial /= Void:             
+<00000000046DC5E8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='s /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE_QUEUE       unsubscribe @1         s /= Void:                   
+<00000000046EAE08>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE_QUEUE       publish @1             m /= Void:                   
+<0000000004691168>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<0000000004779608>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<00000000045DEC98>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<000000000467EB08>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<00000000047A8928>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Feature call on void target.'/>
+	<tag value='unsubscribe'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4   unsubscribe:                 
+<00000000045A7588>                         Feature call on void target.  Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<00000000047C61C8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<00000000047C61C8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE_QUEUE       publish @1             m /= Void:                   
+<00000000046D4918>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE_QUEUE       publish @1             m /= Void:                   
+<0000000004798FF8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<00000000047D0B18>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE_QUEUE       publish @1             m /= Void:                   
+<00000000047951A8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='s /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE_QUEUE       subscribe @1           s /= Void:                   
+<000000000486C6B8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE_QUEUE       publish @1             m /= Void:                   
+<000000000483CB48>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Feature call on void target.'/>
+	<tag value='publish'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4   publish:                     
+<00000000045A7588>                         Feature call on void target.  Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<0000000004904B68>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<0000000004710A38>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='m /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+PRINT_SUBSCRIBER    receive @1             m /= Void:                   
+<00000000048A9488>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+<call_result type='exception'>
+	<meaning value='Precondition violated.'/>
+	<tag value='s /= Void'/>
+	<recipient value='execute_byte_code'/>
+	<class value='ITP_INTERPRETER'>
+	<invariant violation on entry='False'>
+	<exception_trace>
+<![CDATA[
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+MESSAGE_QUEUE       unsubscribe @1         s /= Void:                   
+<00000000045CAEB8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_byte_code @4                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute_protected @3                                
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     report_execute_request @12
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     parse @6                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     main_loop @5                                        
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     start @8                                            
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     execute @16                                         
+<00000000045A7588>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ITP_INTERPRETER     root's creation                                     
+<00000000045A7588>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+]]>
+</exception_trace>
+</call_result>
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_execute_request start
+report_execute_request end
+report_type_request start
+report_type_request end
+</session>
